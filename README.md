@@ -1,56 +1,39 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Math Magicians
 
-> Description the project.
+> A React app that allows users to solve simple math problems and read a random math-related quote..
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- [React](https://reactjs.org/)
 
-## Live Demo (if available)
+## Live Demo (coming soon)
 
-[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+- Copy this link `https://github.com/kelvinbush/math-magicians`.
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `https://github.com/kelvinbush/math-magicians.git`.
+- Go to the repository folder in your command prompt `cd math-magicians`.
+- Run `npm install` to install the React and linter dependencies.
+- Run `npm build` to build the application with react .
+- Run `npm run start` to start the development server.
+- Run `npm run test` to run the tests.
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Kelvin Bush**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@kelvinbush](https://github.com/kelvinbush)
+- Twitter: [@kelvin_bush_](https://twitter.com/kelvin_bush_)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kelvin-wachiye-04b469173/)
 
 ## 🤝 Contributing
 
