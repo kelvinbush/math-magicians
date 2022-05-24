@@ -1,9 +1,15 @@
+import React, { Component } from 'react';
 import Calculator from './components/calculator';
 
-function App() {
-  return (
-    <Calculator />
-  );
-}
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-export default App;
+  render() {
+    return (
+      <Calculator />
+    );
+  }
+}
