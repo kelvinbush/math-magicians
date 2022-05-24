@@ -28,7 +28,6 @@ body {
   @media screen and (min-width: 768px) {
     max-width: 500px;
     margin: 0 auto;
-
   }
 
   &__container {
@@ -55,7 +54,7 @@ body {
     }
   }
 
-  /* first cell of the grid to take 4 columns*/
+  /* first cell of the grid to take 4 columns */
   &__cell:nth-child(1) {
     grid-column: 1 / span 4;
     background-color: #858693;
@@ -65,11 +64,10 @@ body {
     color: #fff;
   }
 
-  /*18th cell to take two columns*/
+  /* 18th cell to take two columns */
   &__cell:nth-child(18) {
     grid-column: 1 / span 2;
   }
-
 }
 
 .operation {
