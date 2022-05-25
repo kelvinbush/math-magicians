@@ -1,107 +1,106 @@
 import React, { Component } from 'react';
+import calculate from '../logic/calculate';
+import CalcCell from './CalcCell';
 
 export default class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+
+  handleCalculate = (label) => {
+    const { total, next, operation } = this.state;
+    const newObj = calculate({ total, next, operation }, label);
+    this.setState({
+      total: newObj.total,
+      operation: newObj.operation,
+      next: newObj.next,
+    });
   }
 
   render() {
     const calculatorOptions = [
       {
-        label: 0,
-        operation: 'answer',
-      },
-      {
         label: 'AC',
-        operation: 'clear',
       },
       {
         label: '+/-',
-        operation: 'negate',
       },
       {
         label: '%',
-        operation: 'percent',
       },
       {
         label: '÷',
-        operation: 'divide',
         code: 'k',
       },
       {
-        label: 7,
-        operation: 'seven',
+        label: '7',
       },
       {
-        label: 8,
-        operation: 'eight',
+        label: '8',
       },
       {
-        label: 9,
-        operation: 'nine',
+        label: '9',
       },
       {
         label: 'x',
-        operation: 'multiply',
         code: 'k',
       },
       {
-        label: 4,
-        operation: 'four',
+        label: '4',
       },
       {
-        label: 5,
-        operation: 'five',
+        label: '5',
       },
       {
-        label: 6,
-        operation: 'six',
+        label: '6',
       },
       {
         label: '-',
-        operation: 'subtract',
         code: 'k',
       },
       {
-        label: 1,
-        operation: 'one',
+        label: '1',
       },
       {
-        label: 2,
-        operation: 'two',
+        label: '2',
       },
       {
-        label: 3,
-        operation: 'three',
+        label: '3',
       },
       {
         label: '+',
-        operation: 'add',
         code: 'k',
       },
       {
-        label: 0,
-        operation: 'zero',
+        label: '0',
       },
       {
         label: '.',
-        operation: 'decimal',
       },
       {
         label: '=',
-        operation: 'equals',
         code: 'k',
       },
     ];
-
+    const { total, next } = this.state;
     return (
       <div className="calculator">
         <div className="calculator__container">
+          <div className="calculator__cell">
+            {total || next || '0'}
+          </div>
           {calculatorOptions.map((option) => (
-            <div className={`calculator__cell ${option.code ? 'operation' : ''}`} key={option.operation}>
-              {option.label}
-            </div>
+            <CalcCell
+              key={option.label}
+              label={option.label}
+              code={option.code ? option.code : ''}
+              handleCalculate={this.handleCalculate}
+            />
           ))}
         </div>
       </div>
