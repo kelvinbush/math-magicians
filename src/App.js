@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Calculator from './components/calculator';
+import Calculator from './components/Calculator';
 
 export default class App extends Component {
   constructor(props) {

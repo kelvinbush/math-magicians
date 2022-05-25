@@ -48,6 +48,8 @@ body {
     font-weight: 700;
     border: 1px solid #ccc;
     cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
       background-color: #ccc;
