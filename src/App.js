@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
-import Calculator from './components/Calculator';
+import React from 'react';
+import { NavLink, Outlet } from 'react-router-dom';
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const App = () => (
+  <>
+    <h1>Math magicians</h1>
+    <NavLink to="/">Home</NavLink>
+    <NavLink to="/calculator">Calculator</NavLink>
+    <NavLink to="/quote">Quote</NavLink>
+    <Outlet />
+  </>
+);
 
-  render() {
-    return (
-      <Calculator />
-    );
-  }
-}
+export default App;
