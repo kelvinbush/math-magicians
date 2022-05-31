@@ -1,7 +1,12 @@
 import React from 'react';
 
 function Quote() {
-  return <h1>This is a quote</h1>;
+  return (
+    <div className="quote">
+      <p>“The best way to predict the future is to create it.”</p>
+      <p>- Abraham Lincoln</p>
+    </div>
+  );
 }
 
 export default Quote;

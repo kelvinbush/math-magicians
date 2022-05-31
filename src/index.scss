@@ -136,11 +136,24 @@ body {
 
 .home {
   text-align: center;
+  padding: 1rem;
 
   h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
     margin-bottom: 1rem;
   }
 
+  p {
+    line-height: 1.4;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.quote {
+  margin-top: 4rem;
+  text-align: center;
   padding: 1rem;
 
   p {
