@@ -82,10 +82,10 @@ const Calculator = () => {
   const { total, next } = calcState;
   return (
     <div className="calculator">
+      {/* eslint-disable-next-line react/no-unescaped-entities */}
+      <h3>Let's do some math!</h3>
       <div className="calculator__container">
-        <div className="calculator__cell">
-          {total || next || '0'}
-        </div>
+        <div className="calculator__cell">{total || next || '0'}</div>
         {calculatorOptions.map((option) => (
           <CalcCell
             key={option.label}
