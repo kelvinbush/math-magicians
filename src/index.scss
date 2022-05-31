@@ -42,7 +42,6 @@ body {
     justify-content: space-between;
   }
 
-
   &__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -53,7 +52,6 @@ body {
     @media screen and (min-width: 768px) {
       width: 50%;
     }
-
   }
 
   &__cell {
@@ -115,7 +113,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: .7rem;
+    margin-top: 0.7rem;
   }
 
   &__link {
@@ -129,10 +127,8 @@ body {
     &:hover {
       color: #f5913e;
     }
-
   }
 }
-
 
 .home {
   text-align: center;
