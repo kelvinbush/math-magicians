@@ -10,13 +10,14 @@ export default class CalcCell extends Component {
   }
 
   render() {
-    const { label, code, handleCalculate } = this.props;
+    const { label, code, handleCalculate, cellId } = this.props;
     return (
       <button
         onClick={() => handleCalculate(label)}
         className={`calculator__cell ${code.length > 0 ? 'operation' : ''}`}
         key={label}
         type="button"
+        data-id={cellId}
       >
         {label}
       </button>
@@ -28,4 +29,5 @@ CalcCell.propTypes = {
   label: PropTypes.string.isRequired,
   code: PropTypes.string.isRequired,
   handleCalculate: PropTypes.func.isRequired,
+  cellId: PropTypes.number.isRequired,
 };

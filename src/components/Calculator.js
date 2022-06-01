@@ -86,8 +86,9 @@ const Calculator = () => {
       <h3>Let's do some math!</h3>
       <div className="calculator__container">
         <div className="calculator__cell">{total || next || '0'}</div>
-        {calculatorOptions.map((option) => (
+        {calculatorOptions.map((option, index) => (
           <CalcCell
+            cellId={index}
             key={option.label}
             label={option.label}
             code={option.code ? option.code : ''}
