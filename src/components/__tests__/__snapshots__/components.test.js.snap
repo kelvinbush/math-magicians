@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="quote"
+>
+  <p>
+    “The best way to predict the future is to create it.”
+  </p>
+  <p>
+    - Abraham Lincoln
+  </p>
+</div>
+`;
