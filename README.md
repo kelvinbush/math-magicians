@@ -10,7 +10,9 @@
 - [React](https://reactjs.org/)
 - [Sass](https://sass-lang.com/)
 
-## Live Demo (coming soon)
+## Live Demo
+- [Heroku](https://math-magicians-kelyb.herokuapp.com/)
+- [Netlify](https://math-magicians-kelyb.netlify.app/)
 
 
 
