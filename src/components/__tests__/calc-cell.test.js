@@ -10,6 +10,7 @@ describe('CalcCell', () => {
         label="My Label"
         code="AC"
         handleCalculate={mockedHandleFunction}
+        cellId={3}
       />,
     );
     const buttonElement = screen.getByText(/my label/i);
