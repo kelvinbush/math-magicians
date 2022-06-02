@@ -10,7 +10,9 @@ export default class CalcCell extends Component {
   }
 
   render() {
-    const { label, code, handleCalculate, cellId } = this.props;
+    const {
+      label, code, handleCalculate, cellId,
+    } = this.props;
     return (
       <button
         onClick={() => handleCalculate(label)}
